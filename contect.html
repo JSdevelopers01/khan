@@ -1,0 +1,197 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contect-page</title>
+    <style>
+        body{
+            background-color: rgb(229, 235, 235);
+        }
+        .table
+        {
+            height: 600px;
+            width: 500px;
+            background-color: rgb(242, 243, 238);
+            margin: auto;
+            margin-top: 20px;
+        }
+        .contect-first-slide
+        {
+            height: 300px;
+            width: 100%;
+            background-color: rgb(240, 224, 7);
+            border-radius: 15px;
+
+        }
+        .CONTECT-WELCOME-SLIDE
+        {
+            text-align: center;
+            font-size: 100px;
+            margin-top: 30px;
+        }
+        .last-slide
+        {
+         height: 360px;
+    width: 100%;
+    background-color: rgb(117, 113, 113);
+    float: left;
+    margin-top: 20px;
+        }
+        .contect_in_slide{
+             height: 295px;
+    width: 800px;
+    background-color: rgb(116, 122, 116);
+    margin: auto;
+    border-radius: 15px;
+        }
+        .text-4{
+             text-align: center;
+    font-size: larger;
+    color: black;
+        }
+        .text_5{
+            text-align: center;
+        }
+        .TEXT_6{
+            text-align: center;
+            color: white;
+        }
+        .footer{
+             height: 50px;
+    width: 100%;
+    background-color: black;
+    float: left;
+        }
+        .TEXT_CEO
+{
+    text-align: center;
+    color: white;
+}
+
+    </style>
+</head>
+<body>
+    <div class="contect-first-slide">
+<h1 class="CONTECT-WELCOME-SLIDE">WELCOME <BR> JS DEVELOPERS</h1>
+    </div>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Form</title>
+
+<style>
+body {
+  font-family: Arial;
+  background: #f5f5f5;
+}
+
+.form-box {
+  width: 350px;
+  margin: 50px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background: green;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: darkgreen;
+}
+
+.gender {
+  margin: 10px 0;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="form-box">
+
+<form action="https://formspree.io/f/yourID" method="POST" onsubmit="sendToWhatsApp()">
+
+<input type="text" id="fname" name="First Name" placeholder="First Name" required>
+<input type="text" id="lname" name="Last Name" placeholder="Last Name" required>
+<input type="text" id="father" name="Father Name" placeholder="Father Name">
+<input type="number" id="age" name="Age" placeholder="Age">
+
+<div class="gender">
+  <label><input type="radio" name="Gender" value="Male"> Male</label>
+  <label><input type="radio" name="Gender" value="Female"> Female</label>
+</div>
+
+<input type="email" id="email" name="Email" placeholder="Email" required>
+<input type="text" id="phone" name="Phone" placeholder="Phone">
+
+<button type="submit">Submit</button>
+
+</form>
+
+</div>
+
+<script>
+function sendToWhatsApp() {
+
+  var fname = document.getElementById("fname").value;
+  var lname = document.getElementById("lname").value;
+  var father = document.getElementById("father").value;
+  var age = document.getElementById("age").value;
+  var email = document.getElementById("email").value;
+  var phone = document.getElementById("phone").value;
+
+  var gender = document.querySelector('input[name="Gender"]:checked');
+  gender = gender ? gender.value : "";
+
+  var message =
+    "First Name: " + fname + "%0A" +
+    "Last Name: " + lname + "%0A" +
+    "Father Name: " + father + "%0A" +
+    "Age: " + age + "%0A" +
+    "Gender: " + gender + "%0A" +
+    "Email: " + email + "%0A" +
+    "Phone: " + phone;
+
+  var url = "https://wa.me/9653590754?text=" + message;
+
+  window.open(url, "_blank");
+}
+</script>
+
+</body>
+</html>
+            <div class="last-slide">
+                  <DIV class="contect_in_slide">
+            <p class="text-4">JS DEVELOPERS</p>
+            <P class="text-4">WEB & APP DEVELOPMENT</P>
+            <P class="text-4">COMPANY</P>
+            <p class="text-4">ph: +91-8607990754 || ph: +91-9653590754</p>
+            <p class="text_5">Email: jk1418614@gmail.com</p>
+            <p class="TEXT_6">ADD:- JS DEVELOPERS TECH SOLUTION COMPANY GURUGRAM  CYBER HUB SEC:51 </p>
+        </DIV>
+            </div> 
+            <div class="footer">
+        <P class="TEXT_CEO">FOUNDER & CEO  JS DEVELOPERS TECH COMPANY: Mr.JAYAD MOHAMMAD</P>
+    </div>  
+</body>
+</html>
